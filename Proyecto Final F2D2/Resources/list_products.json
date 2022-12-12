@@ -1,0 +1,82 @@
+[
+    {
+        "name" : "Proplan Adulto",
+        "image" : "proadu.jpg",
+        "price" : 99.80
+    },
+    {
+        "name" : "Proplan Cachorros",
+        "image" : "proca.jpg",
+        "price" : 150.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Proplan Cachorros",
+        "image" : "proca.jpg",
+        "price" : 150.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Proplan Cachorros",
+        "image" : "proca.jpg",
+        "price" : 150.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    },
+    {
+        "name" : "Canbo Pet Friend",
+        "image" : "canpe.jpg",
+        "price" : 135.50
+    }
+]
