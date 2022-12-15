@@ -1,82 +1,92 @@
 [
     {
-        "name" : "Proplan Adulto",
-        "image" : "proadu.jpg",
-        "price" : 99.80
+        "id": 1,
+        "name" : "Upcambo",
+        "image" : "p1.jpeg",
+        "price" : 99.81,
     },
     {
-        "name" : "Proplan Cachorros",
-        "image" : "proca.jpg",
-        "price" : 150.50
+        "id": 2,
+        "name" : "Cambolab",
+        "image" : "p2.jpeg",
+        "price" : 150.52
     },
     {
+        "id": 3,
+        "name" : "Peakcambo Friend",
+        "image" : "p3.jpeg",
+        "price" : 135.53
+    },
+    {
+        "id": 4,
+        "name" : "Cambomode Pet",
+        "image" : "p4.jpeg",
+        "price" : 135.54
+    },
+    {
+        "id": 5,
+        "name" : "Evercambo 200gr",
+        "image" : "p5.jpeg",
+        "price" : 30.45
+    },
+    {
+        "id": 6,
         "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "image" : "p6.jpeg",
+        "price" : 1445.56
     },
     {
+        "id": 7,
+        "name" : "Proplan Solidcambo",
+        "image" : "p7.jpeg",
+        "price" : 1770.57
+    },
+    {
+        "id": 8,
+        "name" : "Overproplan",
+        "image" : "p8.jpeg",
+        "price" : 985.58
+    },
+    {
+        "id": 9,
+        "name" : "Coproplan",
+        "image" : "p9.jpeg",
+        "price" : 535.59
+    },
+    {
+        "id": 10,
         "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "image" : "p10.jpeg",
+        "price" : 3654.59
     },
     {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "id": 11,
+        "name" : "Canbo2 30gr",
+        "image" : "p11.jpeg",
+        "price" : 195.91
     },
     {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "id": 12,
+        "name" : "Trueproplan",
+        "image" : "p12.jpeg",
+        "price" : 10.52
     },
     {
-        "name" : "Proplan Cachorros",
-        "image" : "proca.jpg",
-        "price" : 150.50
+        "id": 13,
+        "name" : "Vibeproplan",
+        "image" : "p13.jpeg",
+        "price" : 1053.53
     },
     {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "id": 14,
+        "name" : "Avicambo",
+        "image" : "p14.jpeg",
+        "price" : 885.54
     },
     {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Proplan Cachorros",
-        "image" : "proca.jpg",
-        "price" : 150.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
-    },
-    {
-        "name" : "Canbo Pet Friend",
-        "image" : "canpe.jpg",
-        "price" : 135.50
+        "id": 15,
+        "name" : "Truecambo",
+        "image" : "p15.jpeg",
+        "price" : 335.55
     }
 ]
