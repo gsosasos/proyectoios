@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "name" : "Upcambo",
-        "image" : "p1.jpeg",
-        "price" : 99.81,
+        "name" : "Pack Navideño",
+        "image" : "p1.jpg",
+        "price" : 65.11,
     },
     {
         "id": 2,
-        "name" : "Cambolab",
-        "image" : "p2.jpeg",
-        "price" : 150.52
+        "name" : "Sazonadores Naturales",
+        "image" : "p2.jpg",
+        "price" : 39.90
     },
     {
         "id": 3,
-        "name" : "Peakcambo Friend",
-        "image" : "p3.jpeg",
-        "price" : 135.53
+        "name" : "Pack LongLasting",
+        "image" : "p3.jpg",
+        "price" : 51.90
     },
     {
         "id": 4,
         "name" : "Cambomode Pet",
-        "image" : "p4.jpeg",
+        "image" : "p4.jpg",
         "price" : 135.54
     },
     {
         "id": 5,
         "name" : "Evercambo 200gr",
-        "image" : "p5.jpeg",
+        "image" : "p5.jpg",
         "price" : 30.45
     },
     {
         "id": 6,
         "name" : "Canbo Pet Friend",
-        "image" : "p6.jpeg",
+        "image" : "p6.jpg",
         "price" : 1445.56
     },
     {
@@ -88,5 +88,36 @@
         "name" : "Truecambo",
         "image" : "p15.jpeg",
         "price" : 335.55
+    },
+    {
+        "id": 16,
+        "name" : "Truecambo",
+        "image" : "p15.jpeg",
+        "price" : 335.55
+    },
+    {
+        "id": 17,
+        "name" : "Barker Pollo",
+        "image" : "p17.jpg",
+        "price" : 17.90
+    },
+    {
+        "id": 18,
+        "name" : "Barker Pavo",
+        "image" : "p18.jpg",
+        "price" : 23.90
+    },
+    {
+        "id": 19,
+        "name" : "Barker Salmón",
+        "image" : "p19.jpg",
+        "price" : 24.90
+    },
+    {
+        "id": 20,
+        "name" : "Barker Codorniz",
+        "image" : "p20.jpg",
+        "price" : 21.90
     }
+    
 ]

@@ -18,8 +18,11 @@ class ConfirmationRouter: ConfirmationRouterProtocol {
     
     func navToGoToHome() {
         
+        //Borramos los valores del carrito
         UserDefaults.standard.removeObject(forKey: AppConstants.SHOPPING_CART)
         
+        // Vamos a la página principal de manera segura
+        // https://stackoverflow.com/questions/30003814/how-can-i-pop-specific-view-controller-in-swift
         if let sourceView = view {
             for controller in sourceView.navigationController!.viewControllers as Array {
                         if controller.isKind(of: HomeViewController.self) {
