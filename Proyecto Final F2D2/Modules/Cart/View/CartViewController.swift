@@ -16,7 +16,10 @@ class CartViewController: UIViewController {
     var presenter: CartPresenterProtocol?
     var database: DataBase?
     
+    @IBOutlet weak var confirmationCart: UIButton!
+    @IBOutlet weak var cleanCart: UIButton!
     @IBOutlet weak var tableProducts: UITableView!
+    @IBOutlet weak var fullPayment: UILabel!
     
     var cart: CartEntity?
     
@@ -27,8 +30,17 @@ class CartViewController: UIViewController {
         getCartFromDatabase()
         if let c = cart {
             navigationItem.title = "(\(c.products.count)) Carrito de compras"
+            cleanCart.alpha = 1
+            confirmationCart.alpha = 1
+            fullPayment.alpha = 1
+            fullPayment.text = String(c.total)
+            print(c.total)
+            
         } else {
             navigationItem.title = "Carrito de compras"
+            cleanCart.alpha = 0
+            confirmationCart.alpha = 0
+            fullPayment.alpha = 0
         }
         
     }
@@ -45,6 +57,7 @@ class CartViewController: UIViewController {
         self.cart = nil
         tableProducts.reloadData()
     }
+    
     
     @IBAction func didTabButtonConfirmation(_ sender: Any) {
         presenter?.presentGoToConfirmation()
@@ -63,6 +76,11 @@ extension CartViewController: UITableViewDataSource {
         
         cell.textLabel?.text = "(\(prod!.quantity)) \(prod!.name)"
         cell.detailTextLabel?.text = "\(prod?.price ?? 0)"
+        
+        if(self.cart?.products.count == 0){
+           print("No hay productos")
+        }
+        
         return cell
     }
     
