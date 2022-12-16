@@ -20,11 +20,16 @@ class CartViewController: UIViewController {
     @IBOutlet weak var cleanCart: UIButton!
     @IBOutlet weak var tableProducts: UITableView!
     @IBOutlet weak var fullPayment: UILabel!
+    @IBOutlet weak var message: UILabel!
+    @IBOutlet weak var dateNow: UILabel!
     
     var cart: CartEntity?
     
     override func viewDidLoad() {
         
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "dd MMM, yyyy - hh:mm:ss"
+        let now = dateFormater.string(from: Date())
         
         tableProducts.dataSource = self
         getCartFromDatabase()
@@ -34,13 +39,20 @@ class CartViewController: UIViewController {
             confirmationCart.alpha = 1
             fullPayment.alpha = 1
             fullPayment.text = String(c.total)
+            message.alpha = 1
+            dateNow.alpha = 1
             print(c.total)
+            dateNow.text = now
             
         } else {
             navigationItem.title = "Carrito de compras"
             cleanCart.alpha = 0
             confirmationCart.alpha = 0
             fullPayment.alpha = 0
+            message.alpha = 0
+            message.text = "No hay productos"
+            dateNow.alpha = 0
+            
         }
         
     }

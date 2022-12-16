@@ -70,13 +70,13 @@ class ProductDetailViewController: UIViewController {
             print(">>> new Product added!", self.product?.id)
             self.products.append(p)
         }
-        let sumAllItems = totalProducts()
-        let cart = CartEntity(total: sumAllItems, products: self.products)
+        
+        let cart = CartEntity(total: 0, products: self.products)
         
         let encoder = JSONEncoder()
         if let dataEncoded = try? encoder.encode(cart) {
             database?.saveData(dataEncoded, key: AppConstants.SHOPPING_CART)
-            //totalProducts()
+            
             return true
            
         }
@@ -96,7 +96,7 @@ class ProductDetailViewController: UIViewController {
         return nil
     }
     
-    private func totalProducts() -> Double {
+    private func totalProducts() {
         if let cart = UserDefaults.standard.object(forKey: AppConstants.SHOPPING_CART) as? Data {
             let decoder = JSONDecoder()
             if let shoppingcart = try? decoder.decode(CartEntity.self, from: cart) {
@@ -109,14 +109,20 @@ class ProductDetailViewController: UIViewController {
                     Double($0.quantity) * $0.price
                 }
                 total = totalvar.reduce(.zero,+).rounded()
-                //print(total)
-                return total
+                
+                let cart = CartEntity(total: total, products: self.products)
+                
+                let encoder = JSONEncoder()
+                if let dataEncoded = try? encoder.encode(cart) {
+                    database?.saveData(dataEncoded, key: AppConstants.SHOPPING_CART)
+                }
+             
             }
             
             
         }
         
-        return 0.0
+ 
     }
     
     
@@ -130,6 +136,7 @@ class ProductDetailViewController: UIViewController {
         
         if successSaveData() {
             dialogMessage = UIAlertController(title: "Éxito", message: "Se añadió al carrito!", preferredStyle: .alert)
+            totalProducts()
         }
         
         dialogMessage.addAction(ok)
