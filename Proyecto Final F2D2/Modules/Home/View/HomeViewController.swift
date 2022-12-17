@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
         getData()
     }
     
-    //Bot€on para mostrar la vista del contenido de carrito de compras
+    //Boton para mostrar la vista del contenido de carrito de compras
     @objc
     private func showCart() {
         presenter?.presentCart()

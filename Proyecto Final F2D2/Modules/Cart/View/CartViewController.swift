@@ -20,8 +20,11 @@ class CartViewController: UIViewController {
     @IBOutlet weak var cleanCart: UIButton!
     @IBOutlet weak var tableProducts: UITableView!
     @IBOutlet weak var fullPayment: UILabel!
-    @IBOutlet weak var message: UILabel!
+    
+    @IBOutlet weak var messageCart: UILabel!
     @IBOutlet weak var dateNow: UILabel!
+    @IBAction func changeDocument(_ sender: Any) {
+    }
     
     var cart: CartEntity?
     
@@ -39,9 +42,9 @@ class CartViewController: UIViewController {
             confirmationCart.alpha = 1
             fullPayment.alpha = 1
             fullPayment.text = String(c.total)
-            message.alpha = 1
+            messageCart.alpha = 1
             dateNow.alpha = 1
-            print(c.total)
+            //print(c.total)
             dateNow.text = now
             
         } else {
@@ -49,8 +52,8 @@ class CartViewController: UIViewController {
             cleanCart.alpha = 0
             confirmationCart.alpha = 0
             fullPayment.alpha = 0
-            message.alpha = 0
-            message.text = "No hay productos"
+            messageCart.alpha = 0
+            messageCart.text = "No hay productos"
             dateNow.alpha = 0
             
         }
@@ -90,7 +93,7 @@ extension CartViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = "\(prod?.price ?? 0)"
         
         if(self.cart?.products.count == 0){
-           print("No hay productos")
+           //print("No hay productos")
         }
         
         return cell

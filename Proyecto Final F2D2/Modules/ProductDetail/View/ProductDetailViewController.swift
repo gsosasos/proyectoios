@@ -64,10 +64,10 @@ class ProductDetailViewController: UIViewController {
         if let p = self.product, var (i, cart) = validateIfProductExist(p) {
             cart.products[i].quantity = qty
             self.products = cart.products
-            print(">>> Product Modified!", cart.products[i].id)
+            //print(">>> Product Modified!", cart.products[i].id)
         } else {
             let p = CartProductEntity(id: self.product?.id ?? 0, name: self.product?.name ?? "", image: self.product?.image ?? "sinfoto", price: self.product?.price ?? 0, quantity: self.qty)
-            print(">>> new Product added!", self.product?.id)
+            //print(">>> new Product added!", self.product?.id)
             self.products.append(p)
         }
         
@@ -100,12 +100,11 @@ class ProductDetailViewController: UIViewController {
         if let cart = UserDefaults.standard.object(forKey: AppConstants.SHOPPING_CART) as? Data {
             let decoder = JSONDecoder()
             if let shoppingcart = try? decoder.decode(CartEntity.self, from: cart) {
-                print(shoppingcart)
-                var calculo = 0.0
+                //print(shoppingcart)
                 var total = 0.00
                 // Sumar elementos en un array
                 // https://stackoverflow.com/questions/24795130/finding-sum-of-elements-in-swift-array
-                var totalvar = shoppingcart.products.map {
+                let totalvar = shoppingcart.products.map {
                     Double($0.quantity) * $0.price
                 }
                 total = totalvar.reduce(.zero,+).rounded()
@@ -128,14 +127,14 @@ class ProductDetailViewController: UIViewController {
     
     @IBAction func didAddButtonTap(_ sender: Any) {
         
-        var dialogMessage = UIAlertController(title: "Error", message: "Vuelve a intentarlo!", preferredStyle: .alert)
+        var dialogMessage = UIAlertController(title: "Error", message: "¡Vuelve a intentarlo!", preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             self.resetStepper()
         })
         
         if successSaveData() {
-            dialogMessage = UIAlertController(title: "Éxito", message: "Se añadió al carrito!", preferredStyle: .alert)
+            dialogMessage = UIAlertController(title: "Ok", message: "Se añadió al carrito.", preferredStyle: .alert)
             totalProducts()
         }
         

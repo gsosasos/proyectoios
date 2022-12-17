@@ -33,7 +33,7 @@ class MarketMOCK: RemoteRepository {
                 let result = try decoder.decode([ProductResponse].self, from: data)
                 return result
             } catch let error {
-                print(error.localizedDescription)
+                //print(error.localizedDescription)
             }
             
         } else {
