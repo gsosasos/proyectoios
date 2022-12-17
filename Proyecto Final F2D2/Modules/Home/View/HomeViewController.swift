@@ -22,12 +22,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Home"
+        navigationItem.title = "Productos"
+        //Aqui le colocamos un icono de carrito de compra en la parte superior
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: .plain, target: self, action: #selector(showCart))
-
         
+        // Vamos a usar Collection View
+        // Hacemos uso de nuestro xibs
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 150, height: 150)
         collection.collectionViewLayout = layout
         
         collection.delegate = self
@@ -37,9 +38,10 @@ class HomeViewController: UIViewController {
         getData()
     }
     
+    //Boton para mostrar la vista del contenido de carrito de compras
     @objc
     private func showCart() {
-        print("showCart")
+        presenter?.presentCart()
     }
 }
 
@@ -61,8 +63,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as! HomeCollectionViewCell
         let item = data[indexPath.row]
         
-        cell.backgroundColor = .lightGray
-        cell.imgProduct.image = UIImage(named: "sinfoto")
+        cell.imgProduct.image = UIImage(named: item.image)
         cell.lblTitle.text = item.name
         cell.lblPrice.text = "S/ \(item.price)" 
         
@@ -70,13 +71,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Tapped!", indexPath)
-        presenter?.presentItemDetail()
+        presenter?.presentItemDetail(product: data[indexPath.row])
     }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 180, height: 150)
+        return CGSize(width: 150, height: 280)
     }
 }

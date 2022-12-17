@@ -8,11 +8,13 @@
 import Foundation
 
 struct ProductResponse: Decodable {
+    let id: Int
     let name: String
     let image: String
     let price: Double
     
     enum CodingKeys: String, CodingKey {
+        case id
         case name
         case image
         case price

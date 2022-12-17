@@ -9,7 +9,8 @@ import UIKit
 
 protocol HomePresenterProtocol {
     func getProducts() -> [ProductResponse]
-    func presentItemDetail()
+    func presentItemDetail(product: ProductResponse)
+    func presentCart()
 }
 
 class HomePresenter: HomePresenterProtocol {
@@ -22,7 +23,11 @@ class HomePresenter: HomePresenterProtocol {
         return interactor?.products() ?? []
     }
     
-    func presentItemDetail() {
-        router?.navItemDetail()
+    func presentItemDetail(product: ProductResponse) {
+        router?.navItemDetail(product: product)
+    }
+    
+    func presentCart() {
+        router?.navCart()
     }
 }
