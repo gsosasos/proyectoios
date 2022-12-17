@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "name" : "Pack Navideño",
+        "image" : "p1.jpg",
+        "price" : 65.11,
+    },
+    {
+        "id": 2,
+        "name" : "Sazonadores Naturales",
+        "image" : "p2.jpg",
+        "price" : 39.90
+    },
+    {
+        "id": 3,
+        "name" : "Pack LongLasting",
+        "image" : "p3.jpg",
+        "price" : 51.90
+    },
+    {
+        "id": 4,
+        "name" : "Cambomode Pet",
+        "image" : "p4.jpg",
+        "price" : 135.54
+    },
+    {
+        "id": 5,
+        "name" : "Evercambo 200gr",
+        "image" : "p5.jpg",
+        "price" : 30.45
+    },
+    {
+        "id": 6,
+        "name" : "Canbo Pet Friend",
+        "image" : "p6.jpg",
+        "price" : 1445.56
+    },
+    {
+        "id": 7,
+        "name" : "Proplan Solidcambo",
+        "image" : "p7.jpeg",
+        "price" : 1770.57
+    },
+    {
+        "id": 8,
+        "name" : "Overproplan",
+        "image" : "p8.jpeg",
+        "price" : 985.58
+    },
+    {
+        "id": 9,
+        "name" : "Coproplan",
+        "image" : "p9.jpeg",
+        "price" : 535.59
+    },
+    {
+        "id": 10,
+        "name" : "Canbo Pet Friend",
+        "image" : "p10.jpeg",
+        "price" : 3654.59
+    },
+    {
+        "id": 11,
+        "name" : "Canbo2 30gr",
+        "image" : "p11.jpeg",
+        "price" : 195.91
+    },
+    {
+        "id": 12,
+        "name" : "Trueproplan",
+        "image" : "p12.jpeg",
+        "price" : 10.52
+    },
+    {
+        "id": 13,
+        "name" : "Vibeproplan",
+        "image" : "p13.jpeg",
+        "price" : 1053.53
+    },
+    {
+        "id": 14,
+        "name" : "Avicambo",
+        "image" : "p14.jpeg",
+        "price" : 885.54
+    },
+    {
+        "id": 15,
+        "name" : "Truecambo",
+        "image" : "p15.jpeg",
+        "price" : 335.55
+    },
+    {
+        "id": 16,
+        "name" : "Truecambo",
+        "image" : "p15.jpeg",
+        "price" : 335.55
+    },
+    {
+        "id": 17,
+        "name" : "Barker Pollo",
+        "image" : "p17.jpg",
+        "price" : 17.90
+    },
+    {
+        "id": 18,
+        "name" : "Barker Pavo",
+        "image" : "p18.jpg",
+        "price" : 23.90
+    },
+    {
+        "id": 19,
+        "name" : "Barker Salmón",
+        "image" : "p19.jpg",
+        "price" : 24.90
+    },
+    {
+        "id": 20,
+        "name" : "Barker Codorniz",
+        "image" : "p20.jpg",
+        "price" : 21.90
+    }
+    
+]
